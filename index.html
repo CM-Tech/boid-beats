@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Boid Beats</title>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://unpkg.com/dat.gui@0.7.5/build/dat.gui.min.js"></script>
+    <style type="text/css">
+        body {
+            background: rgb(0, 0, 0);
+          overflow:hidden;
+        }
+
+        body,
+        html {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        circle {
+            stroke: white;
+            stroke-opacity: 0.25;
+            stroke-width: 2px;
+        }
+      #audio {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.0;
+        transition: opacity 1s;
+      }
+      #audio:hover {
+        opacity: 0.8;
+      }
+      #audio.paused {
+        opacity: 0.8;
+      }
+      #overlay {
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      a {
+        color: white;
+        font-family: Arial;
+      }
+/*       canvas{
+            filter: sepia(0.8) hue-rotate(180deg) saturate(2);
+      } */
+    </style>
+</head>
+
+<body>
+  <canvas></canvas>
+<!--   <div id="overlay">
+    <a href="/#Glorious_morning">Glorious Morning</a><br>
+    <a href="/#Jumper">Jumper</a><br>
+    <a href="/#Stride-">Stride</a><br>
+    <a href="/#300%20Violin%20Orchestra">300 Violin Orchestra</a><br>
+    <a href="/#638150_-ThunderZone-v2-">ThunderZone v2</a><br>
+    <a href="/#Portugal.%20The%20Man%20-%20Feel%20It%20Still">Portugal The Man - Feel it Still</a><br>
+    <a href="/#00%20Intro">The XX - Intro</a><br>
+    <a href="/#Hall%20of%20the%20Mountain%20King">Hall of the Mountain King</a><br>
+    <a href="/#Everybody%20Wants%20To%20Rule%20The%20World%20(7%20Version)">Everybody Wants To Rule The World (7" Version)</a><br>
+    <a href="/#Flight">Flight</a><br>
+    <a href="/#Waterflame%20-%20Electroman%20Adventures%20V2">Electroman Adventures V2</a><br>
+    
+    <a href="/#Rasputin">Rasputin</a><br>
+    
+  </div> -->
+  
+  <audio id="audio" crossorigin="anonymous" class="paused" src="https://cdn.glitch.com/7c659aa6-fe5f-4610-bdf3-3fd76117d9a5%2F300%20Violin%20Orchestra.mp3?1551626906037" loop controls></audio>
+  <script src="script.js"></script>
+</body>
+
+</html>
